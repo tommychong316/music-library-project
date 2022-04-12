@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DisplaySongs from './Components/DisplaySongs/DisplaySongs';
+import AddSongForm from './Components/AddSong/AddSongForm';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <div>
       <DisplaySongs parentSongs={songs}/>
+      <AddSongForm />
     </div>
   );
 }
