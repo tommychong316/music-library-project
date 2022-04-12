@@ -18,6 +18,7 @@ const AddSongForm = (props) => {
             date: date
         };
         console.log(newSong);
+        props.addNewSongProperty(newSong);
     }
 
 
