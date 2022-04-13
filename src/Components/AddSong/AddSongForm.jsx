@@ -22,11 +22,10 @@ const AddSongForm = (props) => {
     }
 
 
-
-
-
+    
     return ( 
         <form onSubmit={handleSubmit}>
+            <div className='form-group'>
             <label>Title</label>
             <input type='' value={title} onChange={(event) => setTitle(event.target.value)}/>
             <label>Artist</label>
@@ -37,6 +36,7 @@ const AddSongForm = (props) => {
             <input type='' value={genre} onChange={(event) => setGenre(event.target.value)}/>
             <label>Realase Date</label>
             <input type='date' value={date} onChange={(event) => setDate(event.target.value)}/>
+            </div>
             <button type='submit'>Add Song</button>
         </form>
      );

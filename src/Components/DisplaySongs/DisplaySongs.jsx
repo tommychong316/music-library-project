@@ -1,14 +1,19 @@
+import axios from "axios";
+import React, { useState } from 'react';
+
+
 const DisplaySongs = (props) => {
-    return ( 
-        <table>
+
+  return ( 
+        <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Artist</th>
-            <th>Album</th>
-            <th>Genre</th>
-            <th>Release Date</th>
-            <th></th>
+            <th scope="col">Title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Album</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Release Date</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -20,7 +25,10 @@ const DisplaySongs = (props) => {
                 <td>{song.album}</td>
                 <td>{song.genre}</td>
                 <td>{song.date}</td>
-                <td></td>
+                <td>
+                    <button type='submit'>delete</button>
+                    <button type='submit'>edit</button>
+                </td>
                
               </tr>
             );
